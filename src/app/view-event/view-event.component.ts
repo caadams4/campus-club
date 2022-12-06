@@ -71,7 +71,7 @@ export class ViewEventComponent {
     console.log(this.data)
     var body_parameters: any = {
       'id': event._id, // NOTE THIS WILL BE THE DOCUMENT ID
-      'attendees':this.data.user.firstName+this.data.user.lastName[0],
+      'attendees':this.data.user.firstName+" "+this.data.user.lastName[0],
     };
 
     console.log(body_parameters)

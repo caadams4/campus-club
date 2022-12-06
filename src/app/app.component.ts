@@ -82,9 +82,9 @@ export class AppComponent {
           event_list['documents'][i].coordinates = this.center;
 
           let attendees: string[] = event_list['documents'][i].attendees;
-          if (this.user) console.log("USER IN EVENT", this.user.firstName+this.user.lastName[0], attendees)
+          if (this.user) console.log("USER IN EVENT", this.user.firstName+ " "+this.user.lastName[0], attendees)
           
-          if (this.user && attendees.includes(this.user?.firstName+this.user?.lastName[0])) { // check if a member of, if true, render a leave button
+          if (this.user && attendees.includes(this.user?.firstName+ " "+this.user?.lastName[0])) { // check if a member of, if true, render a leave button
             console.log("Found a user")
             event_list['documents'][i].id = true;
           } else {

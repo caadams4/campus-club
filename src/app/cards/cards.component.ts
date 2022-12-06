@@ -38,7 +38,7 @@ export class CardsComponent {
     console.log(this.joinedEvent)
     var body_parameters: any = {
       'id': event._id, // NOTE THIS WILL BE THE DOCUMENT ID
-      'attendees':this.user.firstName+this.user.lastName[0],
+      'attendees':this.user.firstName+" "+ this.user.lastName[0],
     };
   
     console.log(body_parameters)
@@ -52,7 +52,7 @@ export class CardsComponent {
     formBody = formBody.join("&");
 
 
-    let resp = await fetch('http://127.0.0.1:3000/api/event/removeUser', {
+    let resp = await fetch('https://campus-meet-22-474.ue.r.appspot.com/api/event/removeUser', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
@@ -70,7 +70,7 @@ export class CardsComponent {
     console.log(this.joinedEvent)
     var body_parameters: any = {
       'id': event._id, // NOTE THIS WILL BE THE DOCUMENT ID
-      'attendees':this.user.firstName+this.user.lastName[0],
+      'attendees':this.user.firstName+ " "+this.user.lastName[0],
     };
 
     console.log(body_parameters)
@@ -138,9 +138,9 @@ export class CardsComponent {
         event_list['documents'][i].dateTimeStart = new Date(event_list['documents'][i].dateTimeStart);
         console.log('--------------------')
         let attendees: string[] = event_list['documents'][i].attendees;
-        if (this.user) console.log("USER IN EVENT", this.user.firstName+this.user.lastName[0], attendees)
+        if (this.user) console.log("USER IN EVENT", this.user.firstName+ " "+this.user.lastName[0], attendees)
         
-        if (this.user && attendees.includes(this.user?.firstName+this.user?.lastName[0])) { // check if a member of, if true, render a leave button
+        if (this.user && attendees.includes(this.user?.firstName+ " "+this.user?.lastName[0])) { // check if a member of, if true, render a leave button
           console.log("Found a user")
           event_list['documents'][i].id = true;
         } else {
