@@ -100,7 +100,7 @@ export class CreateEventComponent {
         body: formBody
       }
   
-      fetch('http://127.0.0.1:3000/api/event',request) 
+      fetch('https://campus-meet-22-474.ue.r.appspot.com/api/event',request) 
   
       console.log("Need to wait for db to write new event")
       setTimeout(()=>{},250);

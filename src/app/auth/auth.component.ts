@@ -92,7 +92,7 @@ export class AuthComponent implements OnInit {
       body: formBody
     }
 
-    user_profile = await fetch('http://127.0.0.1:3000/api/user/find',request) 
+    user_profile = await fetch('https://campus-meet-22-474.ue.r.appspot.com/api/user/find',request) 
     .then((response) => response.json())
     .then((user) => {
       return user;
@@ -127,7 +127,7 @@ export class AuthComponent implements OnInit {
       body: formBody
     }
 
-    user_profile = await fetch('http://127.0.0.1:3000/api/user/',request) 
+    user_profile = await fetch('https://campus-meet-22-474.ue.r.appspot.com/api/user/',request) 
     .then((response) => response.json())
     .then((user) => {
       return user; 

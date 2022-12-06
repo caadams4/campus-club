@@ -51,7 +51,7 @@ export class ViewEventComponent {
     formBody = formBody.join("&");
 
 
-    let resp = await fetch('http://127.0.0.1:3000/api/event/removeUser', {
+    let resp = await fetch('https://campus-meet-22-474.ue.r.appspot.com/api/event/removeUser', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
@@ -85,7 +85,7 @@ export class ViewEventComponent {
     formBody = formBody.join("&");
 
 
-    let resp = await fetch('http://127.0.0.1:3000/api/event/addUser', {
+    let resp = await fetch('https://campus-meet-22-474.ue.r.appspot.com/api/event/addUser', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'

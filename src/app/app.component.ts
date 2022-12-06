@@ -68,7 +68,7 @@ export class AppComponent {
         }
       }
   
-      event_list = await fetch('http://127.0.0.1:3000/api/event',request) 
+      event_list = await fetch('https://campus-meet-22-474.ue.r.appspot.com/api/event',request) 
       .then((response) => response.json())
       .then((user) => {
         return user;
