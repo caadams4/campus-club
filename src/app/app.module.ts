@@ -45,7 +45,7 @@ import { ViewEventComponent } from './view-event/view-event.component';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '534423947406-v3lk2sc0p98tl6lfdjpec838t8uctcba.apps.googleusercontent.com'
+              '510373022874-rkhamjoq2cd0rb9dstb8hics3iiifq2h.apps.googleusercontent.com'
             )
           }
         ],
